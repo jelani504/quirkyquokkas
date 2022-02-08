@@ -1,15 +1,18 @@
 {
-  "price": 0.01,
-  "number": null,
+  "price": 1.00,
+  "number": 10,
   "gatekeeper": {
     "gatekeeperNetwork": "ignREusXmGrscGNUesoU9mxfds9AiYTezUKex2PsZV6",
     "expireOnUse": true
   },
-  "solTreasuryAccount": null,
+  "solTreasuryAccount": "HuBcQZYPXtgcusZcJAG1FQwkUrAW271YSM2QLsnudbFJ",
   "splTokenAccount": null,
   "splToken": null,
-  "goLiveDate": null,
-  "endSettings": null,
+  "goLiveDate": "8 Feb 2022 2:20:00 GMT",
+  "endSettings": {
+        "endSettingType": { "amount": true },
+        "value": 5
+        },
   "whitelistMintSettings": null,
   "hiddenSettings": null,
   "storage": "arweave",

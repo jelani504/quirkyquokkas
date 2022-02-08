@@ -1,9 +1,9 @@
 {
-  "name": "",
-  "symbol": "",
-  "description": "",
-  "creators": [],
-  "collection": {},
+  "name": "QuirkyQuokkas",
+  "symbol": "QQ",
+  "description": "The Happiest NFT on the Planet!",
+  "creators": [{"address": "HuBcQZYPXtgcusZcJAG1FQwkUrAW271YSM2QLsnudbFJ", "share": "100"}],
+  "collection": {"name": "QuirkyQuokkas", "family": "QuirkyQuokkas"},
   "premadeCustoms": [
     {
       "background": "blue.png",
