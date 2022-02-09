@@ -1,7 +1,10 @@
 import './App.css';
 import { useMemo } from 'react';
 import * as anchor from '@project-serum/anchor';
+import GlobalStyles from './globalStyles';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './Home';
+import NavBar from './components/Navbar/NavBar';
 
 import { clusterApiUrl } from '@solana/web3.js';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
@@ -23,7 +26,7 @@ import { ThemeProvider, createTheme } from '@material-ui/core';
 
 const theme = createTheme({
   palette: {
-    type: 'light',
+    type: 'dark',
   },
 });
 
@@ -65,21 +68,25 @@ const App = () => {
   );
 
   return (
-    <ThemeProvider theme={theme}>
-      <ConnectionProvider endpoint={endpoint}>
-        <WalletProvider wallets={wallets} autoConnect>
-          <WalletDialogProvider>
-            <Home
-              candyMachineId={candyMachineId}
-              connection={connection}
-              startDate={startDateSeed}
-              txTimeout={txTimeoutInMilliseconds}
-              rpcHost={rpcHost}
-            />
-          </WalletDialogProvider>
-        </WalletProvider>
-      </ConnectionProvider>
-    </ThemeProvider>
+    <Router>
+      <GlobalStyles />
+      <ThemeProvider theme={theme}>
+        <NavBar />
+        <ConnectionProvider endpoint={endpoint}>
+          <WalletProvider wallets={wallets} autoConnect>
+            <WalletDialogProvider>
+              <Home
+                candyMachineId={candyMachineId}
+                connection={connection}
+                startDate={startDateSeed}
+                txTimeout={txTimeoutInMilliseconds}
+                rpcHost={rpcHost}
+              />
+            </WalletDialogProvider>
+          </WalletProvider>
+        </ConnectionProvider>
+      </ThemeProvider>
+    </Router>
   );
 };
 
