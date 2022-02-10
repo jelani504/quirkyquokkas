@@ -134,3 +134,8 @@ export function createAssociatedTokenAccountInstruction(
     data: Buffer.from([]),
   });
 }
+
+export const homeObjOne = {
+  lightBg:false,
+  imgStart: false
+}

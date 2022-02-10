@@ -2,9 +2,9 @@ import './App.css';
 import { useMemo } from 'react';
 import * as anchor from '@project-serum/anchor';
 import GlobalStyles from './globalStyles';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import NavBar from './components/Navbar/NavBar';
+import { NavBar } from './components/index';
 
 import { clusterApiUrl } from '@solana/web3.js';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
@@ -75,13 +75,16 @@ const App = () => {
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect>
             <WalletDialogProvider>
-              <Home
+              <Routes>
+          <Route path="/"  element={<Home
                 candyMachineId={candyMachineId}
                 connection={connection}
                 startDate={startDateSeed}
                 txTimeout={txTimeoutInMilliseconds}
                 rpcHost={rpcHost}
-              />
+              />} />
+        </Routes>
+              
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>

@@ -23,7 +23,19 @@ const NavBar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
                 <NavItem>
-                    <NavLinks to='/'>Home</NavLinks>
+                    <NavLinks to='/about'>ABOUT US</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to='/roadmap'>ROADMAP</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to='/collection'>COLLECTION</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to='/rarity'>RARITY</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to='/faq'>FAQ</NavLinks>
                 </NavItem>
             </NavMenu>
         </NavbarContainer>
