@@ -4,7 +4,7 @@ import * as anchor from '@project-serum/anchor';
 import GlobalStyles from './globalStyles';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import { NavBar } from './components/index';
+import { NavBar, Footer } from './components/index';
 
 import { clusterApiUrl } from '@solana/web3.js';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
@@ -84,7 +84,7 @@ const App = () => {
                 rpcHost={rpcHost}
               />} />
         </Routes>
-              
+              <Footer/>
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>

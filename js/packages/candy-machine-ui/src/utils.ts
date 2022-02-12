@@ -135,7 +135,111 @@ export function createAssociatedTokenAccountInstruction(
   });
 }
 
+// Home
+
 export const homeObjOne = {
   lightBg:false,
-  imgStart: false
+  imgStart: '',
+  lightTopLine: true, 
+  lightText: true, 
+  lightTextDesc: true, 
+  primary: true,
+  buttonLabel: 'Buy',
+  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
+  headline: 'The Happiest NFT on the Plannet!',
+  topLine: 'Quirky Quokkas',
+  img: '',
+  alt: 'Image',
+  start: '' 
+};
+
+//About
+
+export const homeObjTwo = {
+  lightBg:false,
+  imgStart: '',
+  lightTopLine: true, 
+  lightText: true, 
+  lightTextDesc: true, 
+  primary: true,
+  buttonLabel: 'Buy',
+  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
+  headline: 'The Happiest NFT on the Plannet!',
+  topLine: 'Quirky Quokkas',
+  img: '',
+  alt: 'Image',
+  start: '' 
+};
+
+//Roadmap
+
+export const homeObjThree = {
+  lightBg:false,
+  imgStart: '',
+  lightTopLine: true, 
+  lightText: true, 
+  lightTextDesc: true, 
+  primary: true,
+  buttonLabel: 'Buy',
+  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
+  headline: 'The Happiest NFT on the Plannet!',
+  topLine: 'Quirky Quokkas',
+  img: '',
+  alt: 'Image',
+  start: '' 
 }
+
+// Collection
+
+export const homeObjFour = {
+  lightBg:false,
+  imgStart: '',
+  lightTopLine: true, 
+  lightText: true, 
+  lightTextDesc: true, 
+  primary: true,
+  buttonLabel: 'Buy',
+  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
+  headline: 'The Happiest NFT on the Plannet!',
+  topLine: 'Quirky Quokkas',
+  img: '',
+  alt: 'Image',
+  start: '' 
+}
+
+//FAQ
+export const homeObjFive = {
+  lightBg:false,
+  imgStart: '',
+  lightTopLine: true, 
+  lightText: true, 
+  lightTextDesc: true, 
+  primary: true,
+  buttonLabel: 'Buy',
+  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
+  headline: 'The Happiest NFT on the Plannet!',
+  topLine: 'Quirky Quokkas',
+  img: '',
+  alt: 'Image',
+  start: '' 
+}
+
+// Team
+
+export const homeObjSix = {
+  lightBg:false,
+  imgStart: '',
+  lightTopLine: true, 
+  lightText: true, 
+  lightTextDesc: true, 
+  primary: true,
+  buttonLabel: 'Buy',
+  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
+  headline: 'The Happiest NFT on the Plannet!',
+  topLine: 'Quirky Quokkas',
+  img: '',
+  alt: 'Image',
+  start: '' 
+}
+
+
