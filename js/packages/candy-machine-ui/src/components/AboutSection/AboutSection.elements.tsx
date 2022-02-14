@@ -86,10 +86,38 @@ export const CardHolder = styled.div`
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    text-align: center;
+    flex-direction: row;
 `;
 
-export const CardsHeader = styled.h2`
+export const Card = styled.div`
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1;
+    max-width: 30%;
+    flex-basis: 30%;
+
+    @media screen and (max-width: 768px){
+        max-width: 100%;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+`;
+
+export const CardsHeader = styled.h1`
+    width: 100%;
+    text-align: center;
+    margin-bottom: 48px;
+`;
+
+export const CardHeader = styled.h2`
     width: 100%;
     text-align: center;
     margin-bottom: 24px;
+`;
+
+export const CardInfo = styled.p`
+    line-height: 34px;
 `;

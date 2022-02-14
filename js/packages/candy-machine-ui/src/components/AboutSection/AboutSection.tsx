@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Container, Button } from '../../globalStyles'
 import Paper from '@material-ui/core/Paper';
 
-import { CardsHeader, ImgWrapper, Img, AboutSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, CardHolder } from './AboutSection.elements'
+import { Card, CardInfo, CardHeader, CardsHeader, ImgWrapper, Img, AboutSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, CardHolder } from './AboutSection.elements'
 
 const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightText, lightTextDesc, primary, description, buttonLabel, headline, topLine }: {img:string, start: string, alt: string, buttonLabel: string, topLine: string, headline: string, description: string, primary:boolean, lightBg: boolean, imgStart: string, lightTopLine: boolean, lightText: boolean, lightTextDesc: boolean}) => {
   return (
@@ -31,15 +31,26 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
             </InfoRow>
             <CardHolder>
                 <CardsHeader>Why hold a Quirky Quokka?</CardsHeader>
-                <Paper
-            style={{ margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "30%" }} elevation={4}
-          >Info</Paper>
-          <Paper
-            style={{ margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "30%" }} elevation={4}
-          >Info</Paper>
-           <Paper
-            style={{ margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "30%" }} elevation={4}
-          >Info</Paper>
+                <Card>
+                    <Paper style={{  margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "100%" }} elevation={4}>
+                        <CardHeader>Free Mints</CardHeader>
+                        <CardInfo>
+                        Mint every version of Quirky Quokkas on both the Ethereum and Solana blockchains for free(+ gas fees) by holding an original Quokka!
+                        </CardInfo>
+                    </Paper>
+                </Card>
+                <Card>
+                    <Paper style={{ margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "100%" }} elevation={4}>
+                        <CardHeader>DAO Voting</CardHeader>
+                        <CardInfo> Vote on which artist will create the art for the next version of Quirky Quokkas</CardInfo>
+                    </Paper>
+                </Card>
+                <Card>
+                    <Paper style={{ margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "100%" }} elevation={4}>
+                        <CardHeader>Community</CardHeader>
+                        <CardInfo>Be a part of the happiest NFT community on the planet and show off your Quokka! </CardInfo>
+                    </Paper>
+                </Card>
             </CardHolder>
         </Container>
     </AboutSec>
