@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Paper from '@material-ui/core/Paper';
 
 export const AboutSec = styled.div<{ lightBg: boolean }>`
     color: #fff;
@@ -52,7 +53,7 @@ export const Heading = styled.h1<{lightText: boolean}>`
   margin-bottom:24px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')}  
+  color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};  
 `;
 
 export const Subtitle = styled.p<{lightTextDesc: boolean}>`
@@ -60,7 +61,7 @@ export const Subtitle = styled.p<{lightTextDesc: boolean}>`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-  color: ${({lightTextDesc}) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}  
+  color: ${({lightTextDesc}) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}; 
 
 `;
 
@@ -77,5 +78,18 @@ export const Img = styled.img`
     vertical-align: middle;
     display: inline-block;
     max-height: 500px;
-`
+`;
 
+export const CardHolder = styled.div`
+    display: flex;
+    margin: 0 -15px -15px -15px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+`;
+
+export const CardsHeader = styled.h2`
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+`;

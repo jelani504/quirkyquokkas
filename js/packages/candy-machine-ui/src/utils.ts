@@ -137,14 +137,14 @@ export function createAssociatedTokenAccountInstruction(
 
 // Home
 
-export const homeObjOne = {
+export const homeData = {
   lightBg:false,
   imgStart: '',
   lightTopLine: true, 
   lightText: true, 
   lightTextDesc: true, 
   primary: true,
-  buttonLabel: 'Buy',
+  buttonLabel: 'Join Discord',
   description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
   headline: 'The Happiest NFT on the Plannet!',
   topLine: 'Quirky Quokkas',
@@ -155,7 +155,7 @@ export const homeObjOne = {
 
 //About
 
-export const homeObjTwo = {
+export const aboutData = {
   lightBg:false,
   imgStart: '',
   lightTopLine: true, 
@@ -173,7 +173,7 @@ export const homeObjTwo = {
 
 //Roadmap
 
-export const homeObjThree = {
+export const roadmapData = {
   lightBg:false,
   imgStart: '',
   lightTopLine: true, 
@@ -187,11 +187,11 @@ export const homeObjThree = {
   img: '',
   alt: 'Image',
   start: '' 
-}
+};
 
 // Collection
 
-export const homeObjFour = {
+export const collectionData = {
   lightBg:false,
   imgStart: '',
   lightTopLine: true, 
@@ -205,10 +205,10 @@ export const homeObjFour = {
   img: '',
   alt: 'Image',
   start: '' 
-}
+};
 
 //FAQ
-export const homeObjFive = {
+export const faqData = {
   lightBg:false,
   imgStart: '',
   lightTopLine: true, 
@@ -222,11 +222,11 @@ export const homeObjFive = {
   img: '',
   alt: 'Image',
   start: '' 
-}
+};
 
 // Team
 
-export const homeObjSix = {
+export const teamData = {
   lightBg:false,
   imgStart: '',
   lightTopLine: true, 
@@ -240,6 +240,6 @@ export const homeObjSix = {
   img: '',
   alt: 'Image',
   start: '' 
-}
+};
 
 

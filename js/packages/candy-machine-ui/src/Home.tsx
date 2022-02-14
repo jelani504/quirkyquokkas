@@ -20,7 +20,7 @@ import { Header } from './Header';
 import { MintButton } from './MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
 import { AboutSection } from './components';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive, homeObjSix  } from './utils';
+import { homeData, aboutData, collectionData, teamData, faqData, roadmapData  } from './utils';
 
 const ConnectButton = styled(WalletDialogButton)`
   width: 100%;
@@ -165,12 +165,7 @@ const Home = (props: HomeProps) => {
 
   return (
     <>
-      <AboutSection {...homeObjOne}  />
-      <AboutSection {...homeObjTwo}  />
-      <AboutSection {...homeObjThree}  />
-      <AboutSection {...homeObjFour}  />
-      <AboutSection {...homeObjFive}  />
-      <AboutSection {...homeObjSix}  />
+      <AboutSection {...homeData}  />
       <Container style={{ marginTop: 100 }}>
         <Container maxWidth="xs" style={{ position: 'relative' }}>
           <Paper
