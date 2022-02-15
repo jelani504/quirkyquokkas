@@ -173,21 +173,31 @@ export const aboutData = {
 
 //Roadmap
 
-export const roadmapData = {
-  lightBg:false,
-  imgStart: '',
-  lightTopLine: true, 
-  lightText: true, 
-  lightTextDesc: true, 
-  primary: true,
-  buttonLabel: 'Buy',
-  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
-  headline: 'The Happiest NFT on the Plannet!',
-  topLine: 'Quirky Quokkas',
-  img: '',
-  alt: 'Image',
-  start: '' 
-};
+export const roadmapData = [
+  { gettingStarted: [
+    {text:'Launch multimedia pages on all social platforms', completed: false},
+    {text:'Launch website at QuirkyQuokkas.com ', completed: false},
+    {text:'Announce mint details', completed: false},
+    {text:'Schedule drop on nftcalendar.io', completed: false},
+    {text:'Secure placement on rarity.tools "Upcoming NFT Sales" project list', completed: false},
+    {text:'Create Charity Fund', completed: false},
+  ]}
+  ,
+   {communityBuilding: [
+     {text:'Open whitelist through multi-phase challenges', completed: false},
+     {text:'Community art constests - All Contest winners recieve exclusive prizes', completed: false},
+   ]},
+   {launch: [
+     {text:'Open Whitelist Mint on QuirkyQuokkas.com - 24 hours before general mint opens', completed: false},
+     {text:'Open General Mint on QuirkyQuokkas.com', completed: false},
+   ]},
+  { expansion: [
+     {text:'Give away free Ethereum NFT counterpart for each Quokka holder!', completed: false},
+     {text:'- DAO Votes on artists to create subsequent versions of Quirky Quokkas to be distributed to Original Quokka Holders for free (+ Gas fees)!', completed: false},
+     {text:'Sponsor TikTok, Youtube and Twitter influencers to craft viral content', completed: false},
+     {text:'Hire Full Marketing team', completed: false},
+   ]}
+];
 
 // Collection
 

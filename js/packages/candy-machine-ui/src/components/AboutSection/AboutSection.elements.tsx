@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { GiVote } from 'react-icons/gi';
 import { ImImages } from 'react-icons/im';
 import { IoPeopleCircleOutline } from 'react-icons/io5';
+import { FaHandHoldingHeart } from 'react-icons/fa'
 
 export const VoteIcon = styled(GiVote)`
     margin-bottom: 24px;
@@ -18,6 +19,12 @@ export const CommunityIcon = styled(IoPeopleCircleOutline)`
     font-size: 82px;
 `;
 
+export const HoldHeartIcon = styled(FaHandHoldingHeart)`
+margin-top: 100px;
+    margin-bottom: 24px;
+    font-size: 100px;
+`
+
 export const AboutSec = styled.div<{ lightBg: boolean }>`
     color: #fff;
     padding: 160px 0;
@@ -30,6 +37,13 @@ export const InfoRow = styled.div<{imgStart: string}>`
     flex-wrap: wrap;
     align-items: center;
     flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
+`;
+
+export const CenteredRow = styled.div`
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
 `;
 
 export const InfoColumn = styled.div`
@@ -51,7 +65,7 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 200px;
 
     @media screen and (max-width: 768px){
         padding-bottom: 65px;
@@ -73,7 +87,7 @@ export const Heading = styled.h1<{lightText: boolean}>`
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};  
 `;
 
-export const Subtitle = styled.p<{lightTextDesc: boolean}>`
+export const SmallSubtitle = styled.p<{lightTextDesc: boolean}>`
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
@@ -81,6 +95,14 @@ export const Subtitle = styled.p<{lightTextDesc: boolean}>`
   color: ${({lightTextDesc}) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}; 
 
 `;
+
+export const Subtitle = styled.p`
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    line-height: 1.69;
+    margin-left: 19%;
+    margin-right: 19%;
+`
 
 export const ImgWrapper = styled.div<{start: string}>`
     max-width: 555px;
@@ -99,7 +121,6 @@ export const Img = styled.img`
 
 export const CardHolder = styled.div`
     display: flex;
-    margin: 0 -15px -15px -15px;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
@@ -112,8 +133,8 @@ export const Card = styled.div`
     padding-right: 15px;
     padding-left: 15px;
     flex: 1;
-    max-width: 30%;
-    flex-basis: 30%;
+    max-width: 33%;
+    flex-basis: 33%;
 
     @media screen and (max-width: 768px){
         max-width: 100%;

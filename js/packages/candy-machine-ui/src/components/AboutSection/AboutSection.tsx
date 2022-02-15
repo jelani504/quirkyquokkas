@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Container, Button } from '../../globalStyles'
 import Paper from '@material-ui/core/Paper';
 
-import { CommunityIcon, FreeMintIcon, VoteIcon, Card, CardInfo, CardHeader, CardsHeader, ImgWrapper, Img, AboutSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, CardHolder } from './AboutSection.elements'
+import { SmallSubtitle, HoldHeartIcon, CenteredRow, CommunityIcon, FreeMintIcon, VoteIcon, Card, CardInfo, CardHeader, CardsHeader, ImgWrapper, Img, AboutSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, CardHolder } from './AboutSection.elements'
 
 const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightText, lightTextDesc, primary, description, buttonLabel, headline, topLine }: {img:string, start: string, alt: string, buttonLabel: string, topLine: string, headline: string, description: string, primary:boolean, lightBg: boolean, imgStart: string, lightTopLine: boolean, lightText: boolean, lightTextDesc: boolean}) => {
   return (
@@ -15,7 +15,7 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
                     <TextWrapper>
                         <TopLine  lightTopLine={lightTopLine}>{topLine}</TopLine>
                         <Heading lightText={lightText}>{headline}</Heading>
-                        <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                        <SmallSubtitle lightTextDesc={lightTextDesc}>{description}</SmallSubtitle>
                         <Link to='/discord'>
                             <Button big fontBig primary={primary}>
                                 {buttonLabel}
@@ -55,6 +55,11 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
                         </Paper>
                     </Card>
             </CardHolder>
+            <CenteredRow>
+                <HoldHeartIcon></HoldHeartIcon>
+                <Heading lightText={lightText}>Hold until your happy!</Heading>
+                <Subtitle>This is an evolving project the allows holders to collectively choose which artist they want to commission the next edition of the collection. Hold until you’re satisfied with a version and then sell for the versions you don’t prefer. Our team is dedicated to creating versions of Quirky Quokkas across all blockchains and metaverses for free to holders of Original Quokkas! </Subtitle>
+            </CenteredRow>
         </Container>
     </AboutSec>
     </>
