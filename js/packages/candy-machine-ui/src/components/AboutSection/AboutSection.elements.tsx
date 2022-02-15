@@ -1,5 +1,22 @@
 import styled from 'styled-components';
-import Paper from '@material-ui/core/Paper';
+import { GiVote } from 'react-icons/gi';
+import { ImImages } from 'react-icons/im';
+import { IoPeopleCircleOutline } from 'react-icons/io5';
+
+export const VoteIcon = styled(GiVote)`
+    margin-bottom: 24px;
+    font-size: 82px;
+`;
+
+export const FreeMintIcon = styled(ImImages)`
+    margin-bottom: 24px;
+    font-size: 76px;
+`;
+
+export const CommunityIcon = styled(IoPeopleCircleOutline)`
+    margin-bottom: 24px;
+    font-size: 82px;
+`;
 
 export const AboutSec = styled.div<{ lightBg: boolean }>`
     color: #fff;

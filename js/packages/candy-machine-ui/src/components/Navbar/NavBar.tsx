@@ -23,7 +23,7 @@ const NavBar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
                 <NavItem>
-                    <NavLinks to='/about'>ABOUT US</NavLinks>
+                    <NavLinks to='/about'>ABOUT</NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks to='/roadmap'>ROADMAP</NavLinks>
