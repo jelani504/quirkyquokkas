@@ -13,13 +13,13 @@ const listItems = roadmapData.reduce((prev: any, sectionObj: any, key) => {
     const sectionName = Object.keys(sectionObj)[0];
     prev[sectionName] = sectionObj[sectionName].map((textObj: {completed: boolean, text: string}, itemKey: number) => {
             if (textObj.completed ){
-                return <ListItem key={itemKey}>
-                <ListIcon as={MdCheckCircle} color='#38a169' />
+                return <ListItem key={itemKey} marginBottom={12} fontSize='24'>
+                <ListIcon as={MdCheckCircle} color='#38a169' marginRight=''/>
                 {textObj.text}
             </ListItem>
             }
-            return <ListItem key={itemKey}>
-            <ListIcon as={MdSettings} color='#38a169' />
+            return <ListItem key={itemKey} fontSize='17px'>
+            <ListIcon as={MdSettings} color='#38a169' marginRight='10px' fontSize='17px'/>
             {textObj.text}
         </ListItem>
         });

@@ -193,7 +193,7 @@ export const roadmapData = [
    ]},
   { expansion: [
      {text:'Give away free Ethereum NFT counterpart for each Quokka holder!', completed: false},
-     {text:'- DAO Votes on artists to create subsequent versions of Quirky Quokkas to be distributed to Original Quokka Holders for free (+ Gas fees)!', completed: false},
+     {text:'DAO Votes on artists to create subsequent versions of Quirky Quokkas to be distributed to Original Quokka Holders for free (+ Gas fees)!', completed: false},
      {text:'Sponsor TikTok, Youtube and Twitter influencers to craft viral content', completed: false},
      {text:'Hire Full Marketing team', completed: false},
    ]}
@@ -202,11 +202,9 @@ export const roadmapData = [
 // Collection
 
 export const collectionData = {
-  lightBg:false,
-  imgStart: '',
-  lightTopLine: true, 
-  lightText: true, 
-  lightTextDesc: true, 
+  // lightTopLine: true, 
+  // lightText: true, 
+  // lightTextDesc: true, 
   primary: true,
   buttonLabel: 'Buy',
   description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
@@ -214,7 +212,6 @@ export const collectionData = {
   topLine: 'Quirky Quokkas',
   img: '',
   alt: 'Image',
-  start: '' 
 };
 
 //FAQ

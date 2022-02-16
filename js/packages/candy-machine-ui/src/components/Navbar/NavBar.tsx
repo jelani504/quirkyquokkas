@@ -11,20 +11,17 @@ const NavBar = () => {
 
   return (
     <>
-    <IconContext.Provider value = {{ color: '#fff' }}>
+    <IconContext.Provider value = {{ color: '#000' }}>
     <Nav>
         <NavbarContainer>
             <NavLogo to="/">
                 <NavIcon />
-                Quirky Quokkas
+                <p>Quirky Quokkas</p>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
                 {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
-                <NavItem>
-                    <NavLinks to='/about'>ABOUT</NavLinks>
-                </NavItem>
                 <NavItem>
                     <NavLinks to='/roadmap'>ROADMAP</NavLinks>
                 </NavItem>

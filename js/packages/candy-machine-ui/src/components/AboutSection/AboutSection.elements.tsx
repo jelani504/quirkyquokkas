@@ -25,18 +25,18 @@ margin-top: 100px;
     font-size: 100px;
 `
 
-export const AboutSec = styled.div<{ lightBg: boolean }>`
-    color: #fff;
+export const AboutSec = styled.div`
+    color: #000;
     padding: 160px 0;
-    background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+    background: #fff;
 `;
 
-export const InfoRow = styled.div<{imgStart: string}>`
+export const InfoRow = styled.div`
     display: flex;
     margin: 0 -15px -15px -15px;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
+    flex-direction: 'row-reverse';
 `;
 
 export const CenteredRow = styled.div`
@@ -72,27 +72,27 @@ export const TextWrapper = styled.div`
     }
 `;
 
-export const TopLine = styled.div<{lightTopLine: boolean}>`
+export const TopLine = styled.div`
     font-size: 18px;
     line-height: 16px;
     letter-spacing: 1.4px;
     margin-bottom: 16px;
-    color : ${({lightTopLine}) => ( lightTopLine ? '#a9b3c1' : '#4359f7')};
+    color : #000; 
 `;
 
-export const Heading = styled.h1<{lightText: boolean}>`
+export const Heading = styled.h1`
   margin-bottom:24px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};  
+  color: #000;
 `;
 
-export const SmallSubtitle = styled.p<{lightTextDesc: boolean}>`
+export const SmallSubtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-  color: ${({lightTextDesc}) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}; 
+    color: #000;
 
 `;
 
@@ -104,10 +104,10 @@ export const Subtitle = styled.p`
     margin-right: 19%;
 `
 
-export const ImgWrapper = styled.div<{start: string}>`
+export const ImgWrapper = styled.div`
     max-width: 555px;
     display: flex;
-    justify-content: ${({start})=>(start ? 'flex-start' : 'flex-end')};
+    justify-content: flex-end;
 `;
 
 export const Img = styled.img`

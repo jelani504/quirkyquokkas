@@ -8,14 +8,13 @@ import { SmallSubtitle, HoldHeartIcon, CenteredRow, CommunityIcon, FreeMintIcon,
 const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightText, lightTextDesc, primary, description, buttonLabel, headline, topLine }: {img:string, start: string, alt: string, buttonLabel: string, topLine: string, headline: string, description: string, primary:boolean, lightBg: boolean, imgStart: string, lightTopLine: boolean, lightText: boolean, lightTextDesc: boolean}) => {
   return (
     <>
-    <AboutSec lightBg={lightBg}> 
+    <AboutSec > 
         <Container>
-            <InfoRow imgStart={imgStart}>
+            <InfoRow>
                 <InfoColumn>
                     <TextWrapper>
-                        <TopLine  lightTopLine={lightTopLine}>{topLine}</TopLine>
-                        <Heading lightText={lightText}>{headline}</Heading>
-                        <SmallSubtitle lightTextDesc={lightTextDesc}>{description}</SmallSubtitle>
+                        <Heading>{headline}</Heading>
+                        <SmallSubtitle>{description}</SmallSubtitle>
                         <Link to='/discord'>
                             <Button big fontBig primary={primary}>
                                 {buttonLabel}
@@ -24,7 +23,7 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
                     </TextWrapper>
                 </InfoColumn>
                 <InfoColumn>
-                    <ImgWrapper start={start}>
+                    <ImgWrapper>
                         <Img src={img} alt={alt}/>
                     </ImgWrapper>
                 </InfoColumn>
@@ -57,7 +56,7 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
             </CardHolder>
             <CenteredRow>
                 <HoldHeartIcon></HoldHeartIcon>
-                <Heading lightText={lightText}>Hold until your happy!</Heading>
+                <Heading>Hold until your happy!</Heading>
                 <Subtitle>This is an evolving project the allows holders to collectively choose which artist they want to commission the next edition of the collection. Hold until you’re satisfied with a version and then sell for the versions you don’t prefer. Our team is dedicated to creating versions of Quirky Quokkas across all blockchains and metaverses for free to holders of Original Quokkas! </Subtitle>
             </CenteredRow>
         </Container>

@@ -5,7 +5,7 @@ import { Container } from '../../globalStyles';
 
 
 export const Nav = styled.nav`
-    background-color: #030000;
+    background-color: #fffc97;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -17,25 +17,39 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled(Container)`
-display: flex;
-justify-content: space-between;
-height: 80px
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px,  5px,  5px,  5px;
+    width: 100%;
 
-${Container}
+    ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-    color:#fff;
+    color:#000;
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
+    p {
+        margin-top: 10px;
+        font-size: 2.75rem;
+        font-family: 'Luckiest Guy', helvetica;
+        @media screen and (max-width: 960px){
+        font-size: 2.5rem;
+        text-align: center;
+        width: 70%;
+        }
+    }
 `;
 
 export const NavIcon = styled(FaMagento)`
-margin-right: 0.5rem;
+    margin-right: 0.5rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -75,6 +89,7 @@ export const NavMenu = styled.ul<{click: boolean}>`
 export const NavItem = styled.li`
     height: 80px;
     border-bottom: 2px solid transparent;
+    
 
     &:hover {
         border-bottom: 2px solid #4b59f7;
@@ -90,7 +105,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-    color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     text-decoration: none;
