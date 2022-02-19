@@ -28,7 +28,7 @@ margin-top: 100px;
 export const AboutSec = styled.div`
     color: #000;
     padding: 160px 0;
-    background: #fff;
+    background: #fffc97;
 `;
 
 export const InfoRow = styled.div`

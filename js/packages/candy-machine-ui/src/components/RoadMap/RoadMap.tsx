@@ -8,6 +8,8 @@ import {
 import {MdCheckCircle, MdSettings} from 'react-icons/md';
 import { SectionHeader, RoadmapHeader, RoadmapContainer } from './RoadMap.elements';
 import {roadmapData} from '../../utils';
+import Paper from '@material-ui/core/Paper';
+
 
 const listItems = roadmapData.reduce((prev: any, sectionObj: any, key) => {
     const sectionName = Object.keys(sectionObj)[0];
@@ -31,6 +33,7 @@ console.log(listItems);
 const RoadMap = () => {
   return (
     <RoadmapContainer>
+        <Paper style={ {padding: '30px 20px 40px 20px', background: '#fdfccf', color: '#000'}} elevation={4}>
         <Container>
             <RoadmapHeader>ROADMAP</RoadmapHeader>
             <List spacing={3}>
@@ -44,6 +47,7 @@ const RoadMap = () => {
                 {listItems.expansion}
             </List>
         </Container>
+        </Paper>
     </RoadmapContainer>
   )
 };

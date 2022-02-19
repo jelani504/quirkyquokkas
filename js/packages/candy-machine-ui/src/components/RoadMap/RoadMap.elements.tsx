@@ -12,8 +12,8 @@ export const RoadmapHeader = styled.h1`
 `;
 
 export const RoadmapContainer = styled.div`
-    background: #101522;
-    color: #fff;
+    background: #fffc97;
+    color: #000;
     padding-left: 20%;
     padding-right: 20%;
 `;

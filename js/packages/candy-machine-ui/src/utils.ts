@@ -215,21 +215,29 @@ export const collectionData = {
 };
 
 //FAQ
-export const faqData = {
-  lightBg:false,
-  imgStart: '',
-  lightTopLine: true, 
-  lightText: true, 
-  lightTextDesc: true, 
-  primary: true,
-  buttonLabel: 'Buy',
-  description: 'Quirky Quokkas is the happiest collection of 7839 NFTs on both the Solana and Ethereum blockchains.',
-  headline: 'The Happiest NFT on the Plannet!',
-  topLine: 'Quirky Quokkas',
-  img: '',
-  alt: 'Image',
-  start: '' 
-};
+// [[question, answer]]
+export const faqData = [
+  ['What is Quirky Quokkas?', 'Quirky Quokkas is the happiest collection of 7839 1/1 generative NFT art pieces! Owning an original Quirky Quokka on the Solana blockchain will give you access to the Quirky Quokka DAO where you will be able to vote on which artist will create the art for the next version of Quirky Quokkas. You will be able to mint each version of Quirky Quokkas on both the Ethereum and Solana blockchains for free(+ gas fees)!'],
+  ['How many versions of the collection will be released?', 'That will be for the DAO to decide but we anticipate many versions of the collection with great artist involved!'],
+  ['What is the price for minting a Quirky Quokka?', 'The mint price will be .75 Solana for Whitelisted members and 1 Solana for public sale. The public sale will be ___.'],
+  ['How can I get a Quirky Quokka?', 'You will be able to mint Quirky Quokkas on our website ____ or directly through our smart contract via our discord server. Our mint is scheduled for ______ but if you miss out on that they will be available for purchase on after market websites.'],
+  ['How can I use my NFT?', 'Along with being a perfect profile picture, you can use your Original Quirky Quokka NFT to gain access to the Quirky Quokka DAO where you can vote on which artist will be commissioned to make the next Quirky Quokka Collection. With an Original Quirky Quokka you will be able to mint each subsequent Quirky Quokka for free(+ gas fees).  We will also work to create avatars for various metaverses.'],
+  ['What blockchain is it on? ', 'The original Quirky Quokkas collection will be on the Solana blockchain. All holders of the original collection will be able to mint a Quokka on the Ethereum chain as well as each subsequent version of Quirky Quokkas on both the Solana and Ethereal networks. '],
+  ['How is this different from every other PFP Project?', 'This is an evolving project the allows holders to collectively choose which artist they want to commission the next edition of the collection. Hold until you’re satisfied with a version and then sell for the versions you don’t prefer. Our team is dedicated to creating versions of Quirky Quokkas across all blockchains and metaverses for free to holders of Original Quokkas! Follow our Twitter and Discord for more info on what we are doing differently.'],
+  ['Are all Quirky Quokkas that are minted unique?','Yes, each Quirky Quokka minted will be unique! You can only get one of each attribute but you may not get all. You are guaranteed to get some type of fur, background and eyes!'],
+  ['What are the categories of attributes?', ''],
+  ['How many people will get on the whitelist?', '1880 Lucky members will be whitelisted. Whitelist challenges are regularly posted in our discord.'],
+  ['Is there still a chance to get on the whitelist and how do I get on it?', 'Yes, there will be more opportunities to get on the whitelist so keep your eyes peeled! We will make a post with the requirements when there is another whitelist event in our discord.'],
+  ['When is the Quirky Quokkas NFT collection releasing?', ''],
+  ['How many Quirky Quokkas will be reserved for Staff, Marketing, and Giveaways?', '347 Quokkas'],
+  ['Why do we need royalties?','The amount of royalties is currently fixed at 7.5% to finance the Quirky Quokka Community projects. We have ambitious goals to build the community to its maximum potential. The funds collected will benefit the holders and helps secure the welfare of future utilities.'],
+  ['Why 7839 Quokkas?', 'Quokkas are the happiest animal on the planet! Our goal is to be the happiest NFT on the planet! We want all of our community to be happy with all that comes with being a member so we put happiness in everything we do. We chose 7839 because it is mathematically a happy number.'],
+  ['What will the charity fund be used for?','Our team believes in protecting animals. We have built a charity fund to contribute to various animal activists organizations.'],
+  ['Reveal Type?', 'Each Quirky Quokka will be revealed as soon as you mint it!'],
+  ['What is your Twitter?', ''],
+  ['What is your TikTok?',''],
+  ['What is your Instagram?', ''],
+];
 
 // Team
 

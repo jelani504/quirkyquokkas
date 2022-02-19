@@ -22,6 +22,7 @@ import { GatewayProvider } from '@civic/solana-gateway-react';
 import { AboutSection } from './components';
 import { homeData } from './utils';
 import RoadMap from './components/RoadMap/RoadMap';
+import FAQ from './components/FAQ/FAQ';
 
 const ConnectButton = styled(WalletDialogButton)`
   width: 100%;
@@ -34,7 +35,9 @@ const ConnectButton = styled(WalletDialogButton)`
   font-weight: bold;
 `;
 
-const MintContainer = styled.div``; // add your owns styles here
+const MintContainer = styled.div`
+`; // add your owns styles here
+/* color: black !important; */
 
 export interface HomeProps {
   candyMachineId?: anchor.web3.PublicKey;
@@ -168,10 +171,11 @@ const Home = (props: HomeProps) => {
     <>
       <AboutSection {...homeData}  />
       <RoadMap></RoadMap>
+      <FAQ></FAQ>
       <Container style={{ marginTop: 100 }}>
-        <Container maxWidth="xs" style={{ position: 'relative' }}>
+        <Container maxWidth="xs" style={{ position: 'relative', color: 'white'}}>
           <Paper
-            style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
+            style={{ padding: 24, backgroundColor: '#fdfccf', borderRadius: 6}}
           >
             {!wallet.connected ? (
               <ConnectButton>Connect Wallet</ConnectButton>

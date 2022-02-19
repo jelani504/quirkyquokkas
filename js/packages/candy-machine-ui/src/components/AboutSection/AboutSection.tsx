@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Container, Button } from '../../globalStyles'
+import { Container, BlueButton } from '../../globalStyles'
 import Paper from '@material-ui/core/Paper';
 
 import { SmallSubtitle, HoldHeartIcon, CenteredRow, CommunityIcon, FreeMintIcon, VoteIcon, Card, CardInfo, CardHeader, CardsHeader, ImgWrapper, Img, AboutSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, CardHolder } from './AboutSection.elements'
@@ -16,9 +16,9 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
                         <Heading>{headline}</Heading>
                         <SmallSubtitle>{description}</SmallSubtitle>
                         <Link to='/discord'>
-                            <Button big fontBig primary={primary}>
+                            <BlueButton big fontBig primary={primary}>
                                 {buttonLabel}
-                            </Button>
+                            </BlueButton>
                         </Link>
                     </TextWrapper>
                 </InfoColumn>
@@ -31,7 +31,7 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
             <CardHolder>
                 <CardsHeader>Why hold a Quirky Quokka?</CardsHeader>
                     <Card>
-                        <Paper style={{  height: 340, margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "100%" }} elevation={4}>
+                        <Paper style={{  height: 340, margin: 5, padding: 24, backgroundColor: '#fdfccf', borderRadius: 6, width: "100%", color: '#000' }} elevation={4}>
                             <FreeMintIcon></FreeMintIcon>
                             <CardHeader>Free Mints</CardHeader>
                             <CardInfo>
@@ -40,14 +40,14 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
                         </Paper>
                     </Card>
                     <Card>
-                        <Paper style={{ height: 340, margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "100%" }} elevation={4}>
+                        <Paper style={{ height: 340, margin: 5, padding: 24, backgroundColor: '#fdfccf', borderRadius: 6, width: "100%", color: '#000'}} elevation={4}>
                             <VoteIcon ></VoteIcon>
                             <CardHeader>DAO Voting</CardHeader>
                             <CardInfo> Vote on which artist will create the art for the next version of Quirky Quokkas!</CardInfo>
                         </Paper>
                     </Card>
                     <Card>
-                        <Paper style={{ height: 340, margin: 5, padding: 24, backgroundColor: '#151A1F', borderRadius: 6, width: "100%" }} elevation={4}>
+                        <Paper style={{ height: 340, margin: 5, padding: 24, backgroundColor: '#fdfccf', borderRadius: 6, width: "100%", color: '#000' }} elevation={4}>
                             <CommunityIcon></CommunityIcon>
                             <CardHeader>Community</CardHeader>
                             <CardInfo>Be a part of the happiest NFT community on the planet and show off your Quokka! </CardInfo>

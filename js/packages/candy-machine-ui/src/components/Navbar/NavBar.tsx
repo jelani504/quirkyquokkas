@@ -23,10 +23,10 @@ const NavBar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
                 <NavItem>
-                    <NavLinks to='/roadmap'>ROADMAP</NavLinks>
+                    <NavLinks to='/collection'>COLLECTION</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to='/collection'>COLLECTION</NavLinks>
+                    <NavLinks to='/roadmap'>ROADMAP</NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks to='/rarity'>RARITY</NavLinks>

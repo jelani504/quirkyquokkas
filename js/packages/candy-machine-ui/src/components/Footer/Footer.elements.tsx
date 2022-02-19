@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-    background-color: #101522;
+    background-color: #fffc97;
     padding: 4rem 0 2rem 0;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ export const FooterSubscription = styled.section`
     text-align: center;
     margin-bottom: 24px;
     padding: 24px;
-    color: #fff;
+    color: #000;
 `;
 
 export const FooterSubHeading = styled.p`

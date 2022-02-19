@@ -26,9 +26,15 @@ import { ThemeProvider, createTheme } from '@material-ui/core';
 
 const theme = createTheme({
   palette: {
-    type: 'dark',
+    primary: { // works
+      main: '#000',
+      contrastText: '#fff',
+    },
   },
 });
+// type: 'dark',
+    // primary: '#000'
+
 
 const getCandyMachineId = (): anchor.web3.PublicKey | undefined => {
   try {
