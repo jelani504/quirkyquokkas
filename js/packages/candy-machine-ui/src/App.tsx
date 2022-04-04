@@ -23,6 +23,8 @@ import {
 import { WalletDialogProvider } from '@solana/wallet-adapter-material-ui';
 
 import { ThemeProvider, createTheme } from '@material-ui/core';
+import RoadMap from './components/RoadMap/RoadMap';
+import FAQ from './components/FAQ/FAQ';
 
 const theme = createTheme({
   palette: {
@@ -89,6 +91,14 @@ const App = () => {
                 txTimeout={txTimeoutInMilliseconds}
                 rpcHost={rpcHost}
               />} />
+              <Route path='/collection'>
+              </Route>
+              <Route path='/roadmap' element={<RoadMap/>}>
+              </Route>
+              <Route path='/rarity'>
+              </Route>
+              <Route path='/faq' element={<FAQ/>}>
+              </Route>
         </Routes>
               <Footer/>
             </WalletDialogProvider>
