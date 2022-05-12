@@ -27,13 +27,13 @@ margin-top: 100px;
 
 export const AboutSec = styled.div`
     color: #000;
-    padding: 160px 0;
+    padding: 50px 0;
     background: #fffc97;
 `;
 
 export const InfoRow = styled.div`
     display: flex;
-    margin: 0 -15px -15px -15px;
+    margin: 0 -15px 55px -15px;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: 'row-reverse';
@@ -65,7 +65,6 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 200px;
 
     @media screen and (max-width: 768px){
         padding-bottom: 65px;

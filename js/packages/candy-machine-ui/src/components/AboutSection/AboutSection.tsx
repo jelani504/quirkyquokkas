@@ -24,7 +24,7 @@ const AboutSection = ({ alt, start, img, lightBg, imgStart, lightTopLine, lightT
                 </InfoColumn>
                 <InfoColumn>
                     <ImgWrapper>
-                        <Img src={img} alt={alt}/>
+                        <Img src='https://svgur.com/i/h9e.svg'/>
                     </ImgWrapper>
                 </InfoColumn>
             </InfoRow>

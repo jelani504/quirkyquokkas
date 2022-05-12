@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Nav, NavbarContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks } from './Navbarstyle.elements';
+import { Nav, NavbarContainer, NavLogo, NavImg, MobileIcon, NavMenu, NavItem, NavLinks } from './Navbarstyle.elements';
 
 const NavBar = () => {
 
@@ -15,7 +15,7 @@ const NavBar = () => {
     <Nav>
         <NavbarContainer>
             <NavLogo to="/">
-                <NavIcon />
+                <NavImg src="https://svgur.com/i/h7r.svg" />
                 <p>Quirky Quokkas</p>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
